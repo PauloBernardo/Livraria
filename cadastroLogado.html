@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Livraria</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/logado.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastroLogado.css">
+</head>
+<body>
+	<header>
+		<h1>Cadastro</h1>
+		<ul id ="menu">
+		<li><a class="Home">Home</a></li>
+		<li><a class="ListaLivro">Lista livros</a></li>
+		<li><a class="ListaComprado">Lista de Livros Comprados</a></li>
+		<li><a class="ListaDesejo">Lista de Desejos</a></li>
+		<li><a class="ListaLidos">Livros lidos</a></li>
+		<li><a class="Cadastro">Cadastro</a></li>
+		<li><a class="alterarExcluir">Alterar/Excluir</a></li>
+		<li><a class="Ajuda">Ajuda</a></li>
+	</ul>
+	</header>
+	<main>
+		<br>
+		<br>
+		<h2>Cadastre tudo aqui!</h2>
+		<div id="escolha">
+			<ul>
+				<li class="opcoes" id="autores">Autores</li>
+				<li class="opcoes" id="editoras">Editoras</li>
+				<li class="opcoes" id="generos">Gêneros</li>
+				<li class="opcoes" id="livros">Livros</li>
+				<li class="opcoes" id="livrosComprados">Livros Comprados</li>
+				<li class="opcoes" id="livrosDesejados">Livros Desejados</li>
+				<li class="opcoes" id="livrosLidos">Livros Lidos</li>
+			</ul>
+		</div>
+		<div class="form" id="cadastroAutores">
+			<p>Cadastro de Autores</p>
+			<label for="nome"> Nome</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite seu nome.." autofocus="mensagem" id="nomeAutor">
+			<label for="Sobrenome">Sobrenome</label>
+			<input type="text" name="Sobrenome" id="sobrenomeAutor"  placeholder="Digite seu sobrenome aqui.." required="mensagem" autofocus="mensagem">
+			<label for="selectAutor">Gênero</label>
+			<select name="selectAutor" id="selectAutor">
+				<option>Nenhuma ainda</option>
+			</select>
+			<button id="cadastrarAutor">Cadastrar</button>
+		</div>
+		<div class="form" id="cadastroLivros">
+			<p>Cadastro de Livros</p>
+			<label for="nome">Título</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite seu titulo.." autofocus="mensagem" id="tituloLivro">
+			<label for="edicaoLivro">Edicão</label>
+			<input type="numeric" name="edicaoLivro" id="edicaoLivro"  placeholder="Digite sua edição: número.." required="mensagem" autofocus="mensagem">
+			<label for="dataLivro">Data de lançamento</label>
+			<input type="numeric" name="dataLivro" id="dataLivro"  placeholder="Digite sua edição: número.." required="mensagem" autofocus="mensagem">
+			<label for="selectLivroGenero">Gênero</label>
+			<select name="selecLivroGenero" id="selectLivroGenero">
+				<option>Nenhuma ainda</option>
+			</select>
+			<label for="selectLivroAutor">Autor</label>
+			<select name="selecLivroAutor" id="selectLivroAutor">
+				<option>Nenhuma ainda</option>
+			</select>
+			<label for="selectLivroEditora">Editora</label>
+			<select name="selectLivroEditora" id="selectLivroEditora">
+				<option>Nenhuma ainda</option>
+			</select>
+			<button id="cadastrarLivro">Cadastrar</button>
+		</div>
+		<div class="form" id="cadastroLivrosComprados">
+			<p>Cadastro de Livros Comprados</p>
+			<label for="preco">Preço de compra</label>
+			<input type="text" name="preco" required="mensagem" placeholder="Digite seu preço.." autofocus="mensagem" id="precoLivroComprado">
+			<label for="dataCompra">Data da compra</label>
+			<input type="text" name="dataCompra" id="dataCompraLivro"  placeholder="Digite a data aqui.." required="mensagem" autofocus="mensagem">
+			<label for="selectLivroComprado">Livro</label>
+			<select name="selectLivroComprado" id="selectLivroComprado">
+				<option>Nenhuma ainda</option>
+			</select>
+			<button id="cadastrarLivroComprado">Cadastrar</button>
+		</div>
+		<div class="form" id="cadastroLivrosLidos">
+			<p>Cadastro de Livros Lidos</p>
+			<label for="data">Data de leitura</label>
+			<input type="text" name="data" required="mensagem" placeholder="Digite a data aqui.." autofocus="mensagem" id="dataLivroLido">
+			<label for="palavrasChaves">Palavras Chaves</label>
+			<textarea name="palavrasChaves" id="palavrasChaves" cols="45" rows="5">
+			</textarea>
+			<label for="selectLivroLido">Livro</label>
+			<select name="selectLivroLido" id="selectLivroLido">
+				<option>Nenhuma ainda</option>
+			</select>
+			<button id="cadastrarLivroLido">Cadastrar</button>
+		</div>
+		<div class="form" id="cadastroLivrosDesejados">
+			<p>Cadastro de Livros Desejados</p>
+			<label for="preco">Preço estimado</label>
+			<input type="text" name="preco" required="mensagem" placeholder="Digite seu preço.." autofocus="mensagem" id="precoLivroDesejado">
+			<label for="empresa">Empresa vendedora</label>
+			<input type="text" name="empresa" id="empresa" placeholder="Digite a loja..">
+			<label for="selectLivroDesejado">Livro</label>
+			<select name="selectLivroDesejado" id="selectLivroDesejado">
+				<option>Nenhuma ainda</option>
+			</select>
+			<button id="cadastrarLivroDesejado">Cadastrar</button>
+		</div>
+		<div class="form" id="cadastroGeneros">
+			<p>Cadastro de Gêneros</p>
+			<label for="nome"> Nome</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite o genero.." autofocus="mensagem" id="nomeGenero">
+			<button id="cadastrarGenero">Cadastrar</button>
+		</div>
+		<div class="form" id="cadastroEditoras">
+			<p>Cadastro de Editoras</p>
+			<label for="nome"> Nome</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite a editora.." autofocus="mensagem" id="nomeEditora">
+			<button id="cadastrarEditora">Cadastrar</button>
+		</div>
+	</main>
+</body>
+<aside id="areaPerfil">
+	<img id="perfil">
+	<p class="nome"></p>
+	<ul>
+		<li><img id="alterar" src="img/alterar.png"></li>
+		<li><img id="sair" src="img/exit.png"></li>
+	</ul>
+</aside>
+<aside id="abreMenu">
+</aside>
+<aside>
+	<div id="menuAnexo">
+		<h2>Menu</h2>
+		<hr>
+		<ul>
+		<li><a class="Home">Home</a></li>
+		<li><a class="ListaLivro">Lista livros</a></li>
+		<li><a class="ListaComprado">Lista de Livros Comprados</a></li>
+		<li><a class="ListaDesejo">Lista de Desejos</a></li>
+		<li><a class="ListaLidos">Livros lidos</a></li>
+		<li><a class="Cadastro">Cadastro</a></li>
+		<li><a class="alterarExcluir">Alterar/Excluir</a></li>
+		<li><a class="Ajuda">Ajuda</a></li>
+	</ul>
+	</div>
+</aside>
+<footer>
+		&copy; Livraria by Paulo Bernardo
+</footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/logado.js"></script>
+<script type="text/javascript" src="js/cadastroLogado.js"></script>
+<script type="text/javascript" src="js/cadastro/editora.js"></script>
+<script type="text/javascript" src="js/cadastro/genero.js"></script>
+<script type="text/javascript" src="js/cadastro/autor.js"></script>
+<script type="text/javascript" src="js/cadastro/livro.js"></script>
+<script type="text/javascript" src="js/cadastro/livroComprado.js"></script>
+<script type="text/javascript" src="js/cadastro/livroDesejado.js"></script>
+<script type="text/javascript" src="js/cadastro/livroLido.js"></script>
+<script type="text/javascript" src="js/menuAnexo.js"></script>
+</html>

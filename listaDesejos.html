@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Livraria</title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/logado.css">
+	<link rel="stylesheet" type="text/css" href="css/lista/livroComprado.css">
+</head>
+<body>
+	<header>
+		<h1>Lista de Livros Desejados</h1>
+		<ul id ="menu">
+		<li><a class="Home">Home</a></li>
+		<li><a class="ListaLivro">Lista livros</a></li>
+		<li><a class="ListaComprado">Lista de Livros Comprados</a></li>
+		<li><a class="ListaDesejo">Lista de Desejos</a></li>
+		<li><a class="ListaLidos">Livros lidos</a></li>
+		<li><a class="Cadastro">Cadastro</a></li>
+		<li><a class="alterarExcluir">Alterar/Excluir</a></li>
+		<li><a class="Ajuda">Ajuda</a></li>
+	</ul>
+	</header>
+	<main>
+		<div id="filtragem">
+				<h3>Pesquisa</h3>
+				<input type="text" name="nomeTitulo" id="nomeTitulo" placeholder="Titulo..">
+				<button id="fixarTitulo">Fixar</button>
+				<input type="text" name="nomeAutor" id="nomeAutor" placeholder="Autor..">
+				<button id="fixarAutor">Fixar</button>
+				<input type="text" name="nomeGenero" id="nomeGenero" placeholder="Gênero..">
+				<button id="fixarGenero">Fixar</button>
+				<input type="text" name="nomeEditora" id="nomeEditora" placeholder="Editora..">
+				<button id="fixarEditora">Fixar</button>
+				<br>
+				<input type="button" name="preco" id="ordenaPorAlfabeto" value="Ordem alfabética" style="min-width: 20ch">
+				<input type="button" name="preco" id="ordenaPorPreco" value="Ordenar por Preco" style="min-width: 20ch">
+				<select id="selectPreco">
+					<option>Todos</option>
+					<option>Abaixo de R$ 20,00</option>
+					<option>Abaixo de R$ 50,00</option>
+					<option>Abaixo de R$ 100,00</option>
+					<option>Acima de R$ 100,00</option>
+				</select>
+				<br>
+				<button class="grande" id="calcularValorTotal">Calcular valor total</button>
+				<label id="respostaValorTotal"></label>
+				<button class="grande" id="calcularValorParcial">Calcular valor dessa pesquisa</button>
+				<label id="respostaValorParcial"></label>
+			</div>
+		</div>
+		<table id="tabelaLivro">
+			<thead>
+				<tr class="title">
+					<td colspan="10">Livros</td>
+				</tr>
+				<tr class="titulos">
+					<td class="titulo">Titulo</td>
+					<td class="autor">Autor</td>
+					<td class="genero">Gênero</td>
+					<td class="editora">Editora</td>
+					<td class="edicao">Edição</td>
+					<td class="data">Data de lançamento</td>
+					<td class="preco">Preço</td>
+					<td class="dataCompra">Empresa</td>
+					<td class="excluir">Excluir</td>
+					<td class="alterar">Alterar</td>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		<div id="Limitador">
+			<button id="anterior">Anterior</button>
+			<label id="numeroDeQuantidade">1</label>
+			<button id="proximo">Proximo</button>
+		</div>
+	</main>
+	<aside id="promptExcluir">
+		<h3>Você deseja excluir permanentemente ou só da pesquisa atual?</h3>
+		<button id="permanentemente">Permanentemente</button>
+		<button id="pesquisaAtual">Pesquisa Atual</button>
+		<br>
+		<input type="checkbox" name="lembrar" id="lembrar" value="Lembrar=">
+		<label>Lembrar escolha</label>
+		<br>
+		<button id="cancelarExclusao">Cancelar</button>
+	</aside>
+	<aside id="promptAlterar">
+		<h3>Alterar Livro Comprado</h3>
+		<label for="preco">Preço estimado</label>
+				<input type="text" name="preco" required="mensagem" placeholder="Digite seu preço.." autofocus="mensagem" id="precoLivroComprado">
+				<br>
+				<label for="dataCompra">Empresa vendedora</label>
+				<input type="text" name="dataCompra" id="dataCompraLivro"  placeholder="Digite a data aqui.." required="mensagem" autofocus="mensagem">
+				<br>
+				<label for="selectLivroComprado">Livro</label>
+				<select name="selectLivroComprado" id="selectLivroComprado">
+					<option>Nenhuma ainda</option>
+				</select>
+				<br>
+				<button id="alterarLivroComprado">Alterar</button>
+				<button id="cancelarAlteracao">Cancelar</button>
+		<br>
+	</aside>
+</body>
+<aside id="areaPerfil">
+	<img id="perfil">
+	<p class="nome"></p>
+	<ul>
+		<li><img id="alterar" src="img/alterar.png"></li>
+		<li><img id="sair" src="img/exit.png"></li>
+	</ul>
+</aside>
+<aside id="abreMenu">
+</aside>
+<aside>
+	<div id="menuAnexo">
+		<h2>Menu</h2>
+		<hr>
+		<ul>
+		<li><a class="Home">Home</a></li>
+		<li><a class="ListaLivro">Lista livros</a></li>
+		<li><a class="ListaComprado">Lista de Livros Comprados</a></li>
+		<li><a class="ListaDesejo">Lista de Desejos</a></li>
+		<li><a class="ListaLidos">Livros lidos</a></li>
+		<li><a class="Cadastro">Cadastro</a></li>
+		<li><a class="alterarExcluir">Alterar/Excluir</a></li>
+		<li><a class="Ajuda">Ajuda</a></li>
+	</ul>
+	</div>
+</aside>
+<footer>
+		&copy; Livraria by Paulo Bernardo
+</footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/logado.js"></script>
+<script type="text/javascript" src="js/lista/livroDesejado.js"></script>
+<script type="text/javascript" src="js/lista/livroDesejadoAlterar.js"></script>
+<script type="text/javascript" src="js/menuAnexo.js"></script>
+</html>
