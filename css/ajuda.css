@@ -1,0 +1,15 @@
+main {
+	text-align: center;
+}
+main div {
+	margin: 0 auto;
+	margin-top: 10px; 
+	width: 80%;
+	border-radius: 20px;
+	padding: 0.3rem;
+	background-color: gray;
+	background-image: radial-gradient(lightgreen, black);
+}
+main div p {
+	font-weight: bold;
+}

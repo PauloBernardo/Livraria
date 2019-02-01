@@ -1,0 +1,1 @@
+variavel = variavel.toUpperCase();

@@ -1,0 +1,308 @@
+#tabelaLivro {
+	padding: 1rem;
+	border-radius: 5px;
+	background-color: skyblue;
+	position: relative;
+	margin: 0 auto;
+	max-width: 90%;
+}
+#promptAlterar {
+	display: none;
+	position: fixed;
+	left: 35%;
+	bottom: 30%;
+	width: 30%;
+	text-align: center;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 6px 6px 2px #aaaaaa;
+}
+#promptAlterar h3 {
+	font-size: 1.3rem;
+	font-weight: bolder;
+	padding: 0.5rem;
+}
+#promptAlterar button {
+	font-weight: bolder;
+	padding: 0.5rem;
+}
+#promptExcluir {
+	display: none;
+	position: fixed;
+	left: 35%;
+	bottom: 30%;
+	width: 400px;
+	text-align: center;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 6px 6px 2px #aaaaaa;
+}
+#promptExcluir h3 {
+	font-size: 1.3rem;
+	font-weight: bolder;
+	padding: 0.5rem;
+}
+#promptExcluir button {
+	font-weight: bolder;
+	padding: 0.5rem;
+}
+#tabelaLivro .title td {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.4rem;
+	border: 1px solid black;
+	padding: 0.3rem;
+	background-image: radial-gradient(skyblue, black);
+}
+#tabelaLivro .titulos td {
+	padding: 1rem;
+	font-size: 1.1rem;
+	font-weight: bolder;
+	border: 1px solid black;
+}
+#tabelaLivro .dados td {
+	padding: 1rem;
+	background-color: rgba(100,60,255, 0.2);
+	color: black;
+	font-weight: bolder;
+	border: 1px solid black;
+}
+#tabelaLivro td.titulo {
+	max-width: 35%;
+}
+#tabelaLivro td.autor {
+	max-width: 25%;
+}
+#tabelaLivro td.genero {
+	max-width: 10%;
+}
+#tabelaLivro td.editora {
+	max-width: 10%;
+}
+#tabelaLivro td.edicao {
+	max-width: 10%;
+}
+#tabelaLivro td.excluir {
+	max-width: 5%;
+	position: relative;
+}
+#tabelaLivro tbody td.excluir {
+	vertical-align: middle;
+	padding: 2px;
+}
+#tabelaLivro tbody td.alterar {
+	vertical-align: middle;
+	padding: 2px;
+}
+#tabelaLivro tbody td.excluir img {
+	
+	position: relative;
+	cursor: pointer;
+	width: 35px;
+	margin: 0px;
+	padding: 4px;
+}
+#tabelaLivro tbody td.alterar img {
+	
+	position: relative;
+	cursor: pointer;
+	width: 35px;
+	margin: 0px;
+	padding: 4px;
+}
+#tabelaLivro td.alterar {
+	max-width: 5%;
+}
+#tabelaLivro td.data {
+	max-width: 10%;
+}
+main div#filtragem {
+	text-align: auto;
+	margin: auto;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	background-color: black;
+	padding: 0px;
+	width: 78%;
+	border-radius: 0 50px; 
+	border: 2px solid skyblue;
+}
+main div#filtragem h3 {
+	color: white;
+	padding: 0.2rem;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+@media (max-width: 480px) {
+	#tabelaLivro {
+		width: 100%;
+		position: relative;
+		background-color: black;
+		color: white;
+		box-sizing: border-box;
+		margin: 0 auto;
+		word-break: break-word;
+		hyphens: auto;
+	}
+	#tabelaLivro tr {
+		width: 95%;
+	}
+	#tabelaLivro .title td {
+		text-align: center;
+		font-weight: bolder;
+		font-size: 0.8rem;
+		border: 1px solid white;
+		padding: 1px;
+		background-image: radial-gradient(skyblue, black);
+	}
+	#tabelaLivro .titulos td {
+		padding: 1px;
+		font-size: 0.6rem;
+		font-weight: bolder;
+		border: 1px solid white;
+	}
+	#tabelaLivro .dados td {
+		padding: 1px;
+		background-color: rgba(100,60,255, 0.2);
+		color: white;
+		font-size: 0.45rem;
+		font-weight: bolder;
+		border: 1px solid white;
+		hyphens: manual;
+	}
+	#tabelaLivro td.titulo {
+		width: 20%;
+		padding: 1px;
+	}
+	#tabelaLivro td.autor {
+		width: 15%;
+		padding: 1px;
+	}
+	#tabelaLivro td.preco {
+		width: 10%;
+		padding: 1px;
+	}
+	#tabelaLivro td.genero {
+		width: 12%;
+		max-width: 5%;
+		padding: 1px;
+	}
+	#tabelaLivro td.editora {
+		width: 12%;
+		padding: 1px;
+	}
+	#tabelaLivro td.edicao {
+		width: 10%;
+		padding: 1px;
+	}
+	#tabelaLivro td.data {
+		width: 10%;
+		padding: 1px;
+	}
+	#tabelaLivro td.dataCompra {
+		width: 10%;
+		padding: 1px;
+	}
+	#tabelaLivro td.excluir {
+		width: 12%;
+		position: relative;
+		padding: 1px;
+	}
+	#tabelaLivro td.alterar {
+		width: 12%;
+		padding: 1px;
+	}
+	#tabelaLivro tbody td.excluir {
+		vertical-align: middle;
+		padding: 0px;
+	}
+	#tabelaLivro tbody td.alterar {
+		vertical-align: middle;
+		padding: 0px;
+	}
+	#tabelaLivro tbody td.excluir img {
+	
+		position: relative;
+		cursor: pointer;
+		width: 35%;
+		margin: 0px;
+		padding: 0px;
+	}
+	#tabelaLivro tbody td.alterar img {
+	
+		position: relative;
+		cursor: pointer;
+		width: 35%;
+		margin: 0px;
+		padding: 0px;
+	}
+	#tabelaLivro td:nth-child(6) {
+		display: none;
+	}
+	#tabelaLivro td:nth-child(5) {
+		display: none;
+	}
+	#promptAlterar {
+		width: 60%;
+		position: absolute;
+		left: 20%;
+	}
+	#promptAlterar textarea {
+		position: relative;
+		width: 80%;
+	}
+	#promptAlterar select {
+		width: 80%;
+	}
+	#promptExcluir {
+		width: 60%;
+		position: absolute;
+		left: 20%
+	}
+	#tentaDiminuir {
+		position: relative;
+		width: 50%;
+	}
+	main div#filtragem {
+		text-align: auto;
+		margin-bottom: 0.3rem;
+		margin-top: 0.3rem;
+		background-image: radial-gradient(skyblue, black);
+		padding: 0px;
+		width: 78%;
+		border-radius: 10px;
+		border: 2px solid lightgreen;
+	}
+	main div#filtragem input {
+		width: 20%;
+	}
+	main div#filtragem button {
+		margin: 1px;
+		padding: 0px;
+		width: 5ch;
+	}
+	main div#filttragem button, input, select {
+		font-size: 0.7rem;
+	} 
+	main div#filtragem input {
+		margin: 1px;
+	}
+	main div#filtragem button.grande {
+		width: 40%;
+		display: block;
+		margin: 0 auto;
+	}
+	main div#filtragem h3 {
+		color: white;
+		padding: 0.2rem;
+		font-size: 1rem;
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+	main header {
+		margin-bottom: 0px;
+	}
+}

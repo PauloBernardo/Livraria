@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Livraria</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/logado.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastroLogado.css">
+</head>
+<body>
+	<header id="header1">
+		<h1>Alteração e Exclusão</h1>
+		<ul id ="menu">
+		<li><a class="Home">Home</a></li>
+		<li><a class="ListaLivro">Lista livros</a></li>
+		<li><a class="ListaComprado">Lista de Livros Comprados</a></li>
+		<li><a class="ListaDesejo">Lista de Desejos</a></li>
+		<li><a class="ListaLidos">Livros lidos</a></li>
+		<li><a class="Cadastro">Cadastro</a></li>
+		<li><a class="alterarExcluir">Alterar/Excluir</a></li>
+		<li><a class="Ajuda">Ajuda</a></li>
+	</ul>
+	</header>
+	<main>
+		<br>
+		<br>
+		<h2>Altere e Exclua aqui!</h2>
+		<div id="escolha">
+			<ul>
+				<li class="opcoes" id="autores">Autores</li>
+				<li class="opcoes" id="editoras">Editoras</li>
+				<li class="opcoes" id="generos">Gêneros</li>
+			</ul>
+		</div>
+		<div class="form" id="cadastroAutores">
+			<p>Alteração de Autores</p>
+			<label for="selectAutorAtual">Autor Atual</label>
+			<select name="selectAutorAtual" id="selectAutorAtual">
+				<option>Nenhuma ainda</option>
+			</select>
+			<label for="nome"> Nome</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite seu nome.." autofocus="mensagem" id="nomeAutor">
+			<label for="Sobrenome">Sobrenome</label>
+			<input type="text" name="Sobrenome" id="sobrenomeAutor"  placeholder="Digite seu sobrenome aqui.." required="mensagem" autofocus="mensagem">
+			<label for="selectAutor">Gênero</label>
+			<select name="selectAutor" id="selectAutor">
+				<option>Nenhuma ainda</option>
+			</select>
+			<button id="cadastrarAutor">Alterar</button>
+			<button id="excluirAutor">Excluir</button>
+		</div>
+		<div class="form" id="cadastroGeneros">
+			<label for="selectGeneroAtual">Genero Atual</label>
+			<select name="selectGeneroAtual" id="selectGeneroAtual">
+				<option>Nenhuma ainda</option>
+			</select>
+			<p>Alteração de Gêneros</p>
+			<label for="nome"> Nome</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite o genero.." autofocus="mensagem" id="nomeGenero">
+			<button id="cadastrarGenero">Alterar</button>
+			<button id="excluirGenero">Excluir</button>
+		</div>
+		<div class="form" id="cadastroEditoras">
+			<label for="selectEditoraAtual">Editora Atual</label>
+			<select name="selectEditoraAtual" id="selectEditoraAtual">
+				<option>Nenhuma ainda</option>
+			</select>
+			<p>Alteração de Editoras</p>
+			<label for="nome"> Nome</label>
+			<input type="text" name="nome" required="mensagem" placeholder="Digite a editora.." autofocus="mensagem" id="nomeEditora">
+			<button id="cadastrarEditora">Alterar</button>
+			<button id="excluirEditora">Excluir</button>
+		</div>
+	</main>
+</body>
+<aside id="areaPerfil">
+	<img id="perfil">
+	<p class="nome"></p>
+	<ul>
+		<li><img id="alterar" src="img/alterar.png"></li>
+		<li><img id="sair" src="img/exit.png"></li>
+	</ul>
+</aside>
+<aside id="abreMenu">
+</aside>
+<aside>
+	<div id="menuAnexo">
+		<h2>Menu</h2>
+		<hr>
+		<ul>
+		<li><a class="Home">Home</a></li>
+		<li><a class="ListaLivro">Lista livros</a></li>
+		<li><a class="ListaComprado">Lista de Livros Comprados</a></li>
+		<li><a class="ListaDesejo">Lista de Desejos</a></li>
+		<li><a class="ListaLidos">Livros lidos</a></li>
+		<li><a class="Cadastro">Cadastro</a></li>
+		<li><a class="alterarExcluir">Alterar/Excluir</a></li>
+		<li><a class="Ajuda">Ajuda</a></li>
+	</ul>
+	</div>
+</aside>
+<footer>
+		&copy; Livraria by Paulo Bernardo
+</footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/logado.js"></script>
+<script type="text/javascript" src="js/cadastroLogado.js"></script>
+<script type="text/javascript" src="js/alterar/editora.js"></script>
+<script type="text/javascript" src="js/alterar/genero.js"></script>
+<script type="text/javascript" src="js/alterar/autor.js"></script>
+<script type="text/javascript" src="js/menuAnexo.js"></script>
+</html>

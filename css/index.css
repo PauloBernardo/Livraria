@@ -1,0 +1,143 @@
+header h1 {
+	text-align: center;
+	padding: 1rem;
+	font-weight: bolder;
+	font-size: 2em;
+}
+header {
+	background-color: gray;
+}
+#menu li{
+	display: inline-block;
+	padding: 0.5rem;	
+}
+#menu a {
+	text-decoration: none;
+	color: inherit;
+}
+#menu {
+	padding: 0.2rem;
+	background-color: white;
+	border: 1px solid black;
+}
+main {
+	text-align: center;
+}
+main h2 {
+	font-size: 2em;
+	font-weight: bolder;
+	color: white;
+	text-shadow: 0 0 3px #000088, 0 0 5px #000000;
+	padding: 0.5em;
+}
+#form {
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+	padding: 1rem;
+	border-radius: 0.3em;
+	background-color: skyblue;
+	border: 1px solid black;
+}
+#form label, input, button, p {
+	margin: 0.3rem;
+	border-radius: 0.3rem;
+}
+#form a {
+	text-decoration: none;
+	color: green;
+}
+#form button {
+	font-size: 1em;
+	font-weight: bolder;
+	padding: 0.2rem;
+}
+
+footer {
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+main {
+	margin-bottom: 40px;
+}
+body {
+	background-image: url("../img/fundo.png");
+	background-repeat: repeat;
+	background-size: 90%;
+}
+#menuAnexo {
+	display: none;
+}
+@media (max-width: 480px) {
+	body {
+		background-image: url("../img/fundo.jpg");
+		background-repeat: repeat;
+		background-size: 90%;
+	}
+	ul#menu {
+		display: none;
+	}
+	h1 {
+		text-shadow: 0px 0px 3px white, 0px 0px 5px green;
+	}
+	header {
+		background-image: linear-gradient(black, lightgreen);
+		border-bottom: 1px solid black;
+	}
+	header h1 {
+		font-size: 1.5rem;
+		padding: 0.8rem;
+	}
+	#form {
+		width: 60%;
+		background-image: radial-gradient(lightgreen, black);
+	}
+	#form label, p {
+		text-shadow: 0px 0px 3px white, 0px 0px 5px green;
+	}
+	#form a {
+		color: skyblue;
+	}
+	#menuAnexo {
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 50%;
+		padding: 1rem;
+		background-color: white;
+		box-sizing: border-box;
+		text-align: center;
+		height: 100%;
+		z-index: 1;
+	}
+	#menuAnexo h2 {
+		font-weight: bolder;
+		padding: 0.3rem;
+	}
+	#menuAnexo li{
+		display: block;
+		padding: 0.4rem;	
+	}
+	#menuAnexo a {
+		text-decoration: none;
+		color: inherit;
+	}
+	#menuAnexo {
+		padding: 0.2rem;
+		background-color: white;
+		border: 1px solid black;
+	}
+	#abreMenu {
+		position: fixed;
+		top: 45%;
+		left: 0px;
+		border-top: 30px solid transparent;
+		  border-bottom: 30px solid transparent;
+		  border-left: 30px solid lightgreen;
+	}
+}

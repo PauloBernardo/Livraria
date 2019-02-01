@@ -1,0 +1,30 @@
+#icones img {
+	width: 20%;
+	height: 50px;
+	border: 2px solid black;
+}
+#icones img:hover {
+	width: 100px;
+	height: 100px;
+	border: 1px solid orange;
+}
+#icones label {
+	font-weight: bold;
+	padding: 0.2rem;
+	display: block;
+	text-decoration: underline;
+}
+#icones {
+	position: relative;
+	padding: 0.5rem;
+	border: 1px solid gray;
+	background-color: rgba(20,100,255, 0.7);
+}
+#icones img.Selecionado {
+	border: 3px solid orange;
+}
+@media (max-width: 480px) {
+	#icones img {
+		width: 20%;
+	}
+}
